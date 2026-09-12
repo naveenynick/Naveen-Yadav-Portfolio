@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette - Dark Obsidian Space Theme from Digital Marketing Portfolio */
+  --bg-void: #06070a;
+  --bg-primary: #0a0d14;
+  --bg-secondary: #0f1422;
+  --bg-tertiary: #151c2e;
+  
+  /* Glass Surface Tokens */
+  --glass-bg: rgba(15, 20, 34, 0.72);
+  --glass-bg-hover: rgba(22, 30, 52, 0.88);
+  --glass-bg-card: rgba(18, 24, 40, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(0, 240, 255, 0.35);
+  --glass-border-purple: rgba(139, 92, 246, 0.35);
+  
+  /* Glowing Brand Accents */
+  --accent-cyan: #00f0ff;
+  --accent-purple: #8b5cf6;
+  --accent-emerald: #10b981;
+  --accent-blue: #3b82f6;
+  --accent-pink: #ec4899;
+  --accent-amber: #f59e0b;
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 50%, #ec4899 100%);
+  --gradient-accent: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+  --gradient-purple: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  --gradient-emerald: linear-gradient(135deg, #10b981 0%, #00f0ff 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: var(--bg-void);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom sleek scrollbar from Digital Marketing Portfolio */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #06070a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+  }
+}
+
+/* Ambient Cursor Glow Tracker from Digital Marketing Portfolio */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.08) 0%, rgba(139, 92, 246, 0.04) 40%, transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+@media (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
+
+/* Antigravity Glassmorphism Panels */
+.glass-panel {
+  background: var(--glass-bg);
+  background-image: var(--gradient-card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 240, 255, 0.15);
+}
+
+/* Glowing text gradients */
+.gradient-text {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-cyan {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-purple {
+  background: var(--gradient-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-emerald {
+  background: var(--gradient-emerald);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Clock Hand Animations for Samay */
+@keyframes rotateClockHand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.prahar-hand-anim {
+  transform-origin: bottom center;
+  animation: rotateClockHand 18s linear infinite;
+}
+
+.ghati-hand-anim {
+  transform-origin: bottom center;
+  animation: rotateClockHand 6s linear infinite;
+}
+
+/* Subtle float animation for media cards */
+@keyframes floatMiniCard {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-mini-1 {
+  animation: floatMiniCard 4s ease-in-out infinite;
+}
+
+.float-mini-2 {
+  animation: floatMiniCard 4s ease-in-out infinite 2s;
+}
+
+/* Pulse animation for live sports tag */
+@keyframes liveDotPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+}
+
+.live-dot-pulse {
+  animation: liveDotPulse 1.6s ease-in-out infinite;
+}
+
