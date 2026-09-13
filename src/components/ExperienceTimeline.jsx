@@ -122,7 +122,6 @@ export default function ExperienceTimeline() {
 
                       <div className="grid grid-cols-1 gap-3 pt-1">
                         {item.achievements.map((point, pIdx) => {
-                          const isEnterprise = point.includes('ESR, Lodha, and Welspun');
                           const isPowerBI = point.includes('Power BI');
                           const isZoho = point.includes('Zoho Projects');
                           const isZapier = point.includes('Zapier');
@@ -130,22 +129,11 @@ export default function ExperienceTimeline() {
                           return (
                             <div
                               key={pIdx}
-                              className={`flex items-start gap-3 p-3 rounded-xl border transition-colors ${
-                                isEnterprise 
-                                  ? 'bg-cyan-950/20 border-cyan-500/30 text-slate-200' 
-                                  : 'bg-white/[0.02] border-white/5 text-slate-300 hover:border-white/10'
-                              }`}
+                              className="flex items-start gap-3 p-3 rounded-xl border transition-colors bg-white/[0.02] border-white/5 text-slate-300 hover:border-white/10"
                             >
-                              <CheckCircle2 className={`w-4 h-4 shrink-0 mt-0.5 ${isEnterprise ? 'text-cyan-400' : 'text-emerald-400'}`} />
+                              <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5 text-emerald-400" />
                               <p className="text-xs sm:text-sm leading-relaxed">
-                                {isEnterprise ? (
-                                  <>
-                                    Led team training, project handovers, and knowledge transfer while supporting delivery for enterprise clients including{' '}
-                                    <strong className="text-cyan-300 font-semibold underline decoration-cyan-400/40 underline-offset-2">
-                                      ESR, Lodha, and Welspun
-                                    </strong>.
-                                  </>
-                                ) : isZoho ? (
+                                {isZoho ? (
                                   <>
                                     Implemented and optimised <strong className="text-slate-100 font-semibold">Zoho Projects</strong> for project planning, workflow management, and performance tracking, and onboarded the team onto the new ways of working to lift operational efficiency.
                                   </>

@@ -9,7 +9,7 @@ import {
   GraduationCap, 
   TrendingUp, 
   ShieldCheck, 
-  Download,
+  Users,
   Sparkles
 } from 'lucide-react';
 import { LinkedinIcon, GithubIcon, YoutubeIcon, InstagramIcon } from './Icons';
@@ -107,7 +107,7 @@ export default function Hero() {
 
             {/* Concise Bio */}
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-2xl">
-              Over 4 years of combined experience delivering multi-stakeholder projects, engineering business requirements, and designing executive KPI dashboards across <span className="text-slate-200 font-semibold">Renewable Energy</span>, <span className="text-slate-200 font-semibold">Manufacturing</span>, and <span className="text-slate-200 font-semibold">FMCG Retail</span>. Trusted partner for enterprise accounts including <span className="text-cyan-300 font-semibold">ESR, Lodha, and Welspun</span>.
+              Over 4 years of combined experience delivering multi-stakeholder projects, engineering business requirements, and designing executive KPI dashboards across <span className="text-slate-200 font-semibold">Renewable Energy</span>, <span className="text-slate-200 font-semibold">Manufacturing</span>, and <span className="text-slate-200 font-semibold">FMCG Retail</span>.
             </p>
 
             {/* Action CTA Buttons */}
@@ -126,15 +126,6 @@ export default function Hero() {
               >
                 <Mail className="w-4 h-4 text-cyan-400" />
                 <span>Get in Touch</span>
-              </a>
-
-              <a
-                href={`mailto:${personalInfo.email}?subject=Interview%20/%20Opportunity%20Discussion`}
-                className="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/5 transition-all"
-                title="Request Resume / CV"
-              >
-                <Download className="w-4 h-4 text-slate-400" />
-                <span>Request CV</span>
               </a>
             </div>
 
@@ -205,12 +196,12 @@ export default function Hero() {
 
                   <div className="p-3.5 rounded-xl bg-slate-900/80 border border-white/5 hover:border-indigo-500/30 transition-all flex items-start gap-3 group">
                     <div className="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
-                      <ShieldCheck className="w-4 h-4" />
+                      <Users className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-semibold text-slate-200">Enterprise Account Governance</h4>
+                      <h4 className="text-xs font-semibold text-slate-200">Client &amp; Stakeholder FPOC</h4>
                       <p className="text-[12px] text-slate-400 mt-0.5 leading-normal">
-                        Primary liaison managing deliverable scope & risk across ESR, Lodha, and Welspun.
+                        Single point of contact coordinating project deliverables, requirement analysis, and operational workflows.
                       </p>
                     </div>
                   </div>

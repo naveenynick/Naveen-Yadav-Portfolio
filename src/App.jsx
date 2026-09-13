@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ImpactMetrics from './components/ImpactMetrics';
 import About from './components/About';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import Projects from './components/Projects';
@@ -30,7 +29,6 @@ export default function App() {
       {/* Main Content Sections */}
       <main>
         <Hero />
-        <ImpactMetrics />
         <About />
         <ExperienceTimeline />
         <Projects />

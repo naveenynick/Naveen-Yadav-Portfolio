@@ -35,8 +35,8 @@ const pillars = [
   },
   {
     icon: Users,
-    title: "Enterprise Client Advisory",
-    description: "Acting as primary client liaison for blue-chip accounts like ESR, Lodha, and Welspun, ensuring 100% on-time delivery and audit-ready governance.",
+    title: "Client & Stakeholder FPOC",
+    description: "Serving as primary client liaison and first point of contact (FPOC), coordinating deliverable scope, requirements, and cross-functional alignment.",
     accent: "text-purple-400 bg-purple-500/10 border-purple-500/20"
   }
 ];
@@ -104,7 +104,7 @@ export default function About() {
                   Having earned an <strong className="text-white">MSc in Information Systems and Business Analysis from Aston University (Birmingham, UK)</strong>, I specialize in dissecting intricate operational bottlenecks, architecting KPI reporting systems using <strong className="text-slate-100">Power BI, Tableau, and SQL</strong>, and enforcing rigorous Agile/Scrum delivery.
                 </p>
                 <p>
-                  Throughout my career—most notably as the client-facing contact for enterprise giants such as <strong className="text-cyan-300">ESR, Lodha, and Welspun</strong>—I have consistently aligned technical capabilities with executive strategy to ensure audit-ready governance and on-time project milestones.
+                  Throughout my career—acting as the primary client FPOC on multi-stakeholder engagements including projects with <strong className="text-cyan-300">ESR, Lodha, and Welspun</strong>—I have consistently aligned technical capabilities with operational goals to ensure on-time project milestones.
                 </p>
               </div>
 

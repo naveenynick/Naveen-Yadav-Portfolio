@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Business Analyst | Project Coordinator | Project Analyst",
   taglines: [
     "Transforming Complex Data into Strategic Business Decisions",
-    "Driving Agile Delivery for Enterprise Clients (ESR, Lodha, Welspun)",
+    "Driving Agile Project Delivery & Cross-Functional Alignment",
     "Bridging Business Requirements with Scalable Digital Solutions",
     "Optimizing Operational Workflows with Power BI, Tableau & SQL"
   ],
@@ -15,13 +15,7 @@ export const personalInfo = {
   github: "https://github.com/naveenynick",
   youtube: "https://www.youtube.com/GoREBEL",
   instagram: "https://www.instagram.com/gorebelyt",
-  availability: "Available for new opportunities",
-  stats: [
-    { label: "Combined Experience", value: "4+ Years", subtitle: "BA, PM & Operations" },
-    { label: "Industries Covered", value: "3 Sectors", subtitle: "Solar, Manufacturing & FMCG" },
-    { label: "Enterprise Accounts", value: "ESR, Lodha, Welspun", subtitle: "High-value project delivery" },
-    { label: "Project Delivery Track", value: "100%", subtitle: "Audit-ready governance" },
-  ]
+  availability: "Available for new opportunities"
 };
 
 export const skillsData = {
@@ -74,15 +68,15 @@ export const experienceData = [
     location: "Mumbai, India",
     period: "Aug 2025 - Mar 2026",
     sector: "Renewable Energy & CleanTech",
-    badge: "Enterprise Delivery",
-    summary: "Led end-to-end delivery of concurrent solar and cleantech infrastructure projects, acting as primary liaison for prestigious enterprise clients including ESR, Lodha, and Welspun.",
+    badge: "Project Delivery & Analysis",
+    summary: "Led end-to-end delivery of concurrent solar and cleantech infrastructure projects, serving as primary point of contact (FPOC) for project clients including ESR, Lodha, and Welspun.",
     achievements: [
       "Managed multiple concurrent projects end-to-end across planning, scheduling, execution, stakeholder coordination, risk tracking, and issue resolution, delivering consistently within agreed timelines.",
-      "Acted as the primary client and stakeholder contact, leading status meetings, requirements gathering, expectation management, and all project communications.",
+      "Acted as the primary client and stakeholder contact (FPOC), leading status meetings, requirements gathering, expectation management, and all project communications.",
       "Implemented and optimised Zoho Projects for project planning, workflow management, and performance tracking, and onboarded the team onto the new ways of working to lift operational efficiency.",
       "Monitored risks, dependencies, issues, and blockers across the project portfolio, driving corrective actions and follow-through to keep delivery on track.",
       "Maintained audit-ready project repositories and produced project reports, dashboards, leadership updates, documentation, and approvals.",
-      "Led team training, project handovers, and knowledge transfer while supporting delivery for enterprise clients including ESR, Lodha, and Welspun."
+      "Led team training, project handovers, and knowledge transfer while supporting delivery across project clients including ESR, Lodha, and Welspun."
     ],
     skills: ["Zoho Projects", "Agile/Scrum", "Risk Management", "Client Relations", "Audit Governance", "Power BI", "Stakeholder Engagement"]
   },
